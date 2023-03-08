@@ -1,0 +1,176 @@
+$bg-color: #343434;
+$font-app: "Lucida Console", "Courier New", monospace;
+$primary-color: #FD9807;
+$secondary-color: white;
+$complete-color: #0e6cff;
+$cards-bg-color: #444444;
+$description-color: 100;
+
+* {
+    box-sizing: border-box;  
+    margin: 0;
+    padding: 0;   
+}
+
+body{
+    background-color: $bg-color;
+    font-family: $font-app;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+   
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    width: 50%;
+    padding: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+
+   section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: $cards-bg-color;
+    box-shadow: 10px 10px 15px #adb0b4, -7px -7px 10px rgb(191, 189, 189);
+
+    figure{
+     position: relative;
+     transition: all 0.4s;
+     justify-content: center;
+     align-items: center;
+
+
+    } &:hover{
+        background-color:#273b49 ;
+    
+    }&:hover figure{
+        width: 100%;
+        transform: scale(1.1);
+    
+    }
+
+    h1{
+        margin-top: 10px;
+        font-weight: 900;
+         font-size: 1.8rem;
+         color: $primary-color;
+      
+       }
+
+       p{
+        color:$secondary-color;
+       }
+
+    h1, p{
+        margin: 10px;
+     }
+
+   }
+   
+ 
+
+  
+}
+
+
+.form-container{
+    
+    align-items: center;
+    width: 100%;
+    padding: 4rem;
+    background-color: $cards-bg-color;
+    border-radius: 10px;
+
+    form{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 13px;
+    height: 500px;
+    padding: 20px;
+
+    input, textarea, label{
+        display: block;
+        width: 100%;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+       
+    }
+
+    label{
+        color: $primary-color;
+    }
+    input, textarea{
+        width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+     box-sizing: border-box;
+     border-radius: 7px;
+     resize: none;
+        
+    }
+
+    
+    }
+}
+
+
+.app-container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4/1);
+    align-items: center;
+    width: 50%;
+    padding: 4rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+h1{
+        color:  $primary-color;
+    }
+}
+
+.app-title-cont{
+    margin-top: 10px;
+}
+
+
+.complete, .actual {
+    margin-top: 10px;
+    color: $primary-color;
+}
+
+.bottons {
+background-color: $primary-color;
+  border-radius: 7px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.layout-img{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
